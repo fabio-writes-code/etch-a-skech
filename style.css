@@ -3,12 +3,24 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image:linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Mouse Memoirs', sans-serif;
 }
 /* header */
 .header{
-    background: black;
     color:white;
+    font-size: 100px;
+    padding: 10px 40px 0 40px;
+    text-transform: uppercase;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 10px solid #fff;
+    box-shadow: 0 4px 6px -6px rgba(0, 0, 0, .7);
+    
 }
+.header
 
 /* user interface */
 
@@ -16,15 +28,31 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap:20px;
 }
 .ui{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex:1;
-    align-items: flex-end;
+    align-items: center;
     width: 1000px;
+    margin-top: -20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
+
+/* button ribbon */
+
+.ribbon-btns{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 700px;
+}
+
+/* button style */
+
 .ui button{
     border:none;
     display: block;
@@ -33,6 +61,7 @@ body{
     outline: none;
     overflow: hidden;
     position: relative;
+    text-transform: uppercase;
     color:#fff;
     font-weight: 700;
     font-size: 15px;
@@ -43,7 +72,10 @@ body{
     margin:0 auto;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
 }
-
+.ui button span{
+    position: relative;
+    z-index: 1;
+}
 .ui button:after{
     content:"";
     position: absolute;
@@ -51,10 +83,9 @@ body{
     top: 0;
     height: 490%;
     width: 140%;
-    background:#e74c3c;
-    opacity: .3;
-    -webkit-transition: all .5s ease-in-out;
-    transition:all .5s ease-in-out;
+    background:#97d9e1;
+    -webkit-transition: all .3s ease-in-out;
+    transition:all .3s ease-in-out;
     -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
     transform: translateX(-98%) translateY(-25%) rotate(45deg);
 }
@@ -62,6 +93,9 @@ body{
     -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
+
+/* Color selector style */
+
 #color-pick{
     margin: 0 auto;
     padding: 0;
@@ -91,11 +125,12 @@ input[type='range']{
     border-radius: 5px;
     margin:0;
     outline: 0;
-    color:black;
-    background-color: #bdc3c7;
-    opacity: 0.7;
+    color:rgb(0, 0, 0);
+    background-color: #fff;
+    opacity: 0.8;
     -webkit-transition: 0.2s;
     transition: opacity .2s;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
 }
 .slider:hover{
     opacity: 1;
@@ -111,6 +146,7 @@ input[type='range']::-webkit-slider-thumb{
     cursor: pointer;
     border:1px solid white;
     transition: .3s ease-in-out;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
 }
 .slider::moz-range-thumb{
     -webkit-appearance: none;
@@ -126,29 +162,38 @@ input[type='range']::-webkit-slider-thumb{
 }
 .slider-ui{
     text-align: center;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
+.slider-count{
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+/* grid css  */
 .container{
     display: flex;
-    width: 1000px;
-    height: 1000px;
+    width: 960px;
+    height: 960px;
     background-color: black;
     flex-wrap: wrap;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
 }
 .inside-div{
-    background-color:wheat;
-    /* insert formula for size */
-    /* height: 10px;
-    width: 10px; */
+    background-color:white;
     padding:1px;
-    /* margin-top:1px;
-    margin-right: 1px; */
     flex:1 1 auto;
     box-sizing: border-box;
 }
 
-.mouse-over{
-    background-color: black;
+.footer{
+    font-size: 25px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
-/* .inside-div:hover{
-    background-color: black;
-} */

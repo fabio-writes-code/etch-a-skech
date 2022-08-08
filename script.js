@@ -44,7 +44,7 @@ function createDiv(num){
     const div=document.createElement('div');
     div.addEventListener('mouseover',changeColor);
     div.classList.add('inside-div');
-    const widthHeight=`${1000/num}px`;
+    const widthHeight=`${960/num}px`;
     div.style.width=widthHeight;
     div.style.height=widthHeight;
     return div;

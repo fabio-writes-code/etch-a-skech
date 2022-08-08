@@ -5,21 +5,28 @@
         <title>Etch a Sketch</title>
         <script src="./script.js" defer></script>
         <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="header">Etch a Sketch</div>
+        <div class="header">Etch a Sketch !</div>
         <div class="game">
 
             <div class="ui">
-                <input type="color" id="color-pick" value="#000000">
-                <button class="color-btn">Color</button>
-                <button class="color-btn">Rain Bow</button>
-                <button class="color-btn">Eraser</button>
-                <button class="reset-btn">Reset</button>
+                <div class="color-select">
+                    <input type="color" id="color-pick" value="#000000">
+                </div>
+                <div class="ribbon-btns">
+                    <button class="color-btn"><span>Color</span></button>
+                    <button class="color-btn"><span>Rain Bow</span></button>
+                    <button class="color-btn"><span>Eraser</span></button>
+                    <button class="reset-btn"><span>Reset</span></button>
+                </div>           
                 <div class="slider-ui">
                     <p class="slider-count">50 x 50</p>
                     <div class="slider">
-                        <input type="range" min="16" max="100" value="50" class="slider" id="myRange">
+                        <input type="range" min="16" max="80" value="50" class="slider" id="myRange">
                     </div>
                 </div> 
             </div>
@@ -31,6 +38,11 @@
         
         
         
-        <div class="footer">fabio-writes-code</div>
+        <div class="footer">
+            <p>fabio-writes-code</p>
+            <a href="https://github.com/fabio-writes-code">
+                <img src="./GitHub-Mark-32px.png" alt="GitHub">
+            </a>
+        </div>
     </body>
 </html>
