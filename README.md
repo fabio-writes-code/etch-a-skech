@@ -26,7 +26,7 @@ Clone Repo and run Index.js
 
 Demo is hosted on https://fabio-writes-code.github.io/etch-a-sketch/
 
-![etch-a-sketch](etch-a-sketch/src/readme-images/etch-a-sketch.JPG)
+![Alt text](src/readme-images/etch-a-sketch.JPG)
 
 ## Contributing
 
